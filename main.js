@@ -4,13 +4,6 @@ function openNavList(){
 	let navlist = document.querySelector('nav');
 	navlist.classList.toggle("show");
 }
-
-// action of t-shirt
-
-function openProduct(){
-	window.open("product.html", "_self")
-}
-
 // change color of t-shirt
 let actaulImage = document.querySelector('.actaul') 
 
