@@ -1,7 +1,6 @@
 // product in webpage
 fetch('product.json')
 		.then(response => response.json())
-		let allProducts =[]
 		.then(data => {
 			allProducts = data 
 			const products = document.querySelector('.content');
@@ -23,6 +22,8 @@ fetch('product.json')
 						<button type="" data-id=${product.id} onclick="openProduct(this.data-id)">Buy Now</button>
 					</div>`
 			})
+			
+		let allProducts =[]
 			function openProduct(id){
 				let element = allProducts.find(product => product.id == id);;
 			const allIdForProducts = document.querySelector('.product')
