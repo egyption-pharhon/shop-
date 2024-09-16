@@ -21,6 +21,7 @@ fetch('product.json')
 					</div>`
 			})
 			function openProduct(id){
+				window.open("product.html", "_self")
 					let allProducts =[...data.children]
 				let element = allProducts[id]
 			const allIdForProducts = document.querySelector('.product')
@@ -56,5 +57,6 @@ fetch('product.json')
 				</div>
 			</div>`
 		}
+
 
 	});
